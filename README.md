@@ -7,9 +7,7 @@ $$f(x)=\tanh(gx)$$
 Model expression:
 $$\frac{dV_i}{dt} = -\frac{V_i(t)}{\tau} +\sum_{j=1}^NJ_{ij}f(V_j(t))+\epsilon \xi_i(t)$$
 Vector form
-\begin{equation}
-\frac{dV_i}{dt} = -\frac{\textbf{V(t)}}{\tau}+\textbf{J}f(\textbf{V})+\textbf{S}(t)
-\end{equation}
+$$\frac{dV_i}{dt} = -\frac{\textbf{V(t)}}{\tau}+\textbf{J}f(\textbf{V})+\textbf{S}(t)$$
 Observable:
 $$m(t) = \frac{1}{N}\sum_i^N V_i$$
 
@@ -25,9 +23,7 @@ $$\frac{\partial F_i}{\partial V_k} = -\frac{\delta{ij}}{\tau} +J_{ik}g(1-\tanh^
 
 Matrix form:
 $$\Lambda(V)_{ik} = f'(V_k)\delta_{ik} \rightarrow \Lambda(V) = \text{Diag}(g*(1-\tanh^2(gV)))$$
-\begin{equation}
-DF_V = \frac{-\textbf(I_N)}{\tau} + J\Lambda(V)
-\end{equation}
+$$DF_V = \frac{-\textbf(I_N)}{\tau} + J\Lambda(V)$$
 #### Prelude to susceptibility
 
 Adding a perturbation $\xi$ of $\omega$ frequency, to the simulation with $\epsilon ~ 10^{-2}$
